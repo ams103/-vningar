@@ -1,5 +1,9 @@
 import random, os
+
+
 from customgroup import packgroup
+
+
 def classlist_random():
     random.shuffle(people)
     group1 = people[:6]
@@ -8,6 +12,7 @@ def classlist_random():
     print("-"*120)
     print("Group 2: ", group2)
     os.system("pause")
+
 mylist1 = list()
 mylist2 = list()
 customlist = list()
@@ -15,6 +20,8 @@ people = ["Alexander", "Jesper", "Sebastian", "Alicia", "Simon P", "Jalda", "Nil
 print(people)
 print("Do you wish to randomize this list?")
 answer = input("Yes or No: ")
+
+
 if answer == "Yes":
     classlist_random()
 else:
@@ -22,6 +29,7 @@ else:
     answer = input("Yes or no: ")
     if answer == "Yes":
         packgroup()
+        os.system("pause")
 
         '''p = int(input("How many inputs? "))
         for i in range(p):
